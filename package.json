@@ -5,15 +5,16 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "nodemon": "^1.18.10",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "npm start --prefix client",
+    "server": "nodemon server",
+    "start":"node server"
   },
   "eslintConfig": {
     "extends": "react-app"
