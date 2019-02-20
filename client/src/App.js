@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import UsernameForm from './Components/UsernameForm';
 
 class App extends Component {
   render() {
     return (
-      <div className="App"> 
-        <p>sdfsdfdsf</p>
-      </div>
+      <UsernameForm onSubmit={username=>alert(username)}/>
     );
   }
 }
